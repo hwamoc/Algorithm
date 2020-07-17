@@ -11,7 +11,7 @@ input = stdin.readline
 
 # 끝자리가 0~9인 개수를 모두 따져본다.
 # nc[i][j]는 i자리 수에서 j로 끝나는 수들의 총 개수
-# nc[i][j] = nc[i-1] + nc[i][j-1] 라는 점화식을 가진다.
+# nc[i][j] = nc[i-1][j] + nc[i][j-1] 라는 점화식을 가진다.
 N = int(input())
 nc = [[1]*10 for _ in range(N+1)]
 mod = 10007
