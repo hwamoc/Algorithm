@@ -9,9 +9,7 @@ nljj
 c=c=
 '''
 from sys import stdin
-input = stdin.readline
-
-x = input().rstrip()
+x = stdin.readline().rstrip()
 cnt, idx = 0, True
 target = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
 
