@@ -2,13 +2,9 @@
 # 예제 입력 1
 adaabc aababbc
 '''
-from sys import stdin
-input = stdin.readline
-
-a,b = map(str, input().split())
+a,b = input().split()
 al, bl = len(a), len(b)
 l = bl - al
-
 cnts = []
 for i in range(l+1):
     cnt = 0
