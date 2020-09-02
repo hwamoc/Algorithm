@@ -58,3 +58,15 @@ X,Y=input().split()
 a=len(X)
 print(min(sum(X[j]!=Y[i+j]for j in range(a))for i in range(len(Y)-a+1)))
 '''
+
+'''by whilescape
+def solution():
+    import sys
+    a,b = sys.stdin.readline().split()
+    answer = []
+    for k in range(0,  len(b)-len(a)+1):
+        answer.append(sum([1 if i != j else 0 for i, j in zip(a, b[k:k+ len(a)])]))
+    print (min(answer))
+solution()
+    
+'''
