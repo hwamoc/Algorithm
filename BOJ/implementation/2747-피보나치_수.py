@@ -4,15 +4,15 @@
 '''
 # [참고] https://shoark7.github.io/programming/algorithm/피보나치-알고리즘을-해결하는-5가지-방법
 
-# # for문을 활용한 반복적 풀이: 시간 복잡도는 O(n)
-# def fibo(n):
-#     if n < 2:
-#         return n
-#     a, b = 0, 1
-#     for i in range(n-1):
-#         a, b = b, a + b
-#     return b
-# print(fibo(int(input())))
+# for문을 활용한 반복적 풀이: 시간 복잡도는 O(n)
+def fibo(n):
+    if n < 2:
+        return n
+    a, b = 0, 1
+    for i in range(n-1):
+        a, b = b, a + b
+    return b
+print(fibo(int(input())))
 
 
 '''
@@ -47,6 +47,17 @@ def fibo(n):
     return iterate(n)
 
 print(fibo(int(input())))
+'''
+
+'''
+n = int(input())
+A = [0,1]
+if n < 2:
+    print(n)
+else:
+    for i in range(2, n+1):
+        A.append(A[i-2]+A[i-1])
+    print(A[n])
 '''
 
 '''
